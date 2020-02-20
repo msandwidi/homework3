@@ -34,7 +34,8 @@ app.use(
 );
 app.use(bodyParser.json());
 
-//require('./controllers/home')(app);
+require('./controllers/home')(app);
+require('./controllers/user')(app);
 
 app.listen(PORT, () => console.log(chalk.green('✓-- ') + `Server is running on port: ${PORT}`));
 
